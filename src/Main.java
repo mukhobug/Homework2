@@ -11,9 +11,14 @@ public class Main {
        task4();
         System.out.println("\n Пятое задание:");
        task5();
+        System.out.println("\n Шестое задание:");
+       task6();
+        System.out.println("\n Седьмое задание:");
+       task7();
+        System.out.println("\n Восьмое задание:");
+       task8();
 
     }
-
     public static void task1() {
 
         byte b=1;
@@ -26,7 +31,6 @@ public class Main {
         boolean boo= true;
         System.out.println("Переменные объявлены");
     }
-
     public static void task2() {
 
         float weightBoxer1= 78.2f;
@@ -37,7 +41,6 @@ public class Main {
         System.out.println("Разница веса боксёров: "+deltaWeight+" кг");
 
     }
-
     public static void task3() {
         byte bananas=5;
         byte oneBananaWeight=80;
@@ -54,7 +57,6 @@ public class Main {
         System.out.println("Вес спорт завтрака: "+cocktail+" кг");
 
     }
-
     public static void task4() {
 
         byte targetWeight=7;
@@ -71,7 +73,6 @@ public class Main {
         System.out.println("Третий способ "+way3+" д.");// не могу точно понять условие задачи и какой из способов взять как среднее
         System.out.println("Четвертый способ "+way4+" д.");// не могу точно понять условие задачи и какой из способов взять как среднее
     }
-
     public static void task5() {
 
         int mashaDefault= 67760;
@@ -85,5 +86,26 @@ public class Main {
         System.out.println("Маша теперь получает "+mashaUp+" руб."+" Годовой доход вырос на "+mashaDefault*0.1f*12+" руб.");
         System.out.println("Денис теперь получает "+denisUp+" руб."+" Годовой доход вырос на "+denisDefault*0.1f*12+" руб.");
         System.out.println("Кристина теперь получает "+krisUp+" руб."+" Годовой доход вырос на "+krisDefault*0.1f*12+" руб.");
+    }
+    public static void task6() {
+
+       byte a= 12, b= 27, c= 44, d= 15, e= 9;
+       short result= (short) (a*(b+(c-d*e)));
+       result= (short) Math.negateExact(result);
+       System.out.println(result);
+    }
+    public static void task7() {
+
+        byte a= 5, b= 7;
+        a= (byte) (a+b);
+        b= (byte) (a-b);
+        a= (byte) (a-b);
+        System.out.println("a= "+a+" b= "+b);
+    }
+    public static void task8(){
+
+        short a= 666;
+        short b= (short) ((a-(a/100)*100)/10);
+        System.out.println("число: "+a+" вторая цифра числа: "+b);
     }
 }
